@@ -80,17 +80,20 @@ public class MainViewController implements Initializable {
 
     @FXML
     void handleClose(ActionEvent event) {
-
+        System.out.println("CLOSE has been pressed");
+        newItem.setDisable(false);
+        openItem.setDisable(false);
+        closeItem.setDisable(true);
     }
 
     @FXML
     void handleCopy(ActionEvent event) {
-
+        System.out.println("COPY has been pressed");
     }
 
     @FXML
     void handleFind(ActionEvent event) {
-
+        System.out.println("FIND has been pressed");
     }
 
     @FXML
@@ -100,7 +103,6 @@ public class MainViewController implements Initializable {
         } else {
             System.out.println("USE GRIDLINES unselected");
         }
-
     }
 
     @FXML
@@ -113,27 +115,29 @@ public class MainViewController implements Initializable {
 
     @FXML
     void handleOpen(ActionEvent event) {
-
+        System.out.println("OPEN has been pressed");
+        closeItem.setDisable(false);
+        newItem.setDisable(true);
+        openItem.setDisable(true);
     }
 
     @FXML
     void handleReplace(ActionEvent event) {
-
+        System.out.println("REPLACE has been pressed");        
     }
 
     @FXML
     void handleSizeLarge(ActionEvent event) {
-
+        System.out.println("LARGE has been selected");        
     }
 
     @FXML
     void handleSizeMedium(ActionEvent event) {
-
+        System.out.println("MEDIUM has been selected");        
     }
 
     @FXML
     void handleSizeSmall(ActionEvent event) {
-
+        System.out.println("SMALL has been selected");        
     }
-
 }
